@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/labac-p/demo-ga/compare/0.4.1...0.4.2) (2025-06-07)
+
+
+### Bug Fixes
+
+* release gem ([9055526](https://github.com/labac-p/demo-ga/commit/905552659b495a95bd1c3315b561cb087540bbee))
+
 ## [0.4.1](https://github.com/labac-p/demo-ga/compare/0.4.0...0.4.1) (2025-06-07)
 
 
