@@ -37,3 +37,4 @@ jobs:
         echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" >> ~/.gem/credentials
         chmod 0600 ~/.gem/credentials
         gem push demo-ga-*.gem --host "https://rubygems.pkg.github.com/labac-p"
+        rm ~/.gem/credentials
