@@ -1,0 +1,39 @@
+name: Release Gem
+
+on:
+  release:
+    types:
+      - created
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+
+    - name: Build gem
+      run: gem build demo-ga.gemspec
+
+    - name: Push gem
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+
+    - name: Push gem
+      run: |
+        mkdir -p ~/.gem
+        echo "---" > ~/.gem/credentials
+        echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" >> ~/.gem/credentials
+        chmod 0600 ~/.gem/credentials
+        gem push demo-ga-*.gem --host "https://rubygems.pkg.github.com/labac-p"
