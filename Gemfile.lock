@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    demo-ga (0.4.6)
+    demo-ga (0.4.7)
 
 GEM
   remote: https://rubygems.org/
