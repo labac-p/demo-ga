@@ -1,5 +1,6 @@
 {
   "release-type": "ruby",
+  "initial-version": "0.1.0",
   "packages": {
     ".": {
       "release-type": "ruby",
