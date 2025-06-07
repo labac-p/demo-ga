@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.3](https://github.com/labac-p/demo-ga/compare/0.4.2...0.4.3) (2025-06-07)
+
+
+### Bug Fixes
+
+* typo ([cfdb9ab](https://github.com/labac-p/demo-ga/commit/cfdb9abe91488feef355fb2c8d17a4000d65c852))
+* Update release ([e94d05f](https://github.com/labac-p/demo-ga/commit/e94d05f0356f6af36474c7ece7811c0b41ef935f))
+
 ## [0.4.2](https://github.com/labac-p/demo-ga/compare/0.4.1...0.4.2) (2025-06-07)
 
 
