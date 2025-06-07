@@ -47,7 +47,7 @@ jobs:
           bundler-cache: true
 
       - name: Build gem
-        run: gem build demo-ga.gemspec
+        run: gem build
 
       - name: Push gem
         run: |
@@ -55,4 +55,4 @@ jobs:
           echo "---" > ~/.gem/credentials
           echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" >> ~/.gem/credentials
           chmod 0600 ~/.gem/credentials
-          gem push demo-ga-*.gem --host "https://rubygems.pkg.github.com/labac-p"
+          gem push --key github --host "https://rubygems.pkg.github.com/labac-p" demo-ga-*.gem
