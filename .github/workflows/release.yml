@@ -25,11 +25,10 @@ jobs:
         with:
           config-file: .release-please-config.json
 
-
   release:
     name: Release
     needs: release-please
-    if: steps.release-please.outputs.release_created
+    if: needs.release-please.outputs.release_created
     runs-on: ubuntu-24.04
 
     steps:
