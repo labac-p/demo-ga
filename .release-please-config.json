@@ -1,8 +1,22 @@
 {
+  "changelog-sections": [
+    { "type": "feat", "section": "Features" },
+    { "type": "feature", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "perf", "section": "Performance Improvements" },
+    { "type": "revert", "section": "Reverts" },
+    { "type": "refactor", "section": "Refactoring" },
+    { "type": "chore", "section": "Miscellaneous Chores" },
+    { "type": "test", "section": "Tests" },
+    { "type": "build", "section": "Build System", "hidden": true }
+  ],
   "packages": {
     ".": {
-      "release-type": "ruby",
       "package-name": "demo-ga",
+      "release-type": "ruby",
+      "include-component-in-tag": false,
+      "include-v-in-tag": false,
+      "changelog-path": "CHANGELOG.md",
       "version-file": "lib/demo/ga/version.rb"
     }
   },
